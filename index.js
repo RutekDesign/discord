@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 var d = new Date();
 var e = new String("");
 var m = new String("");
-const token = 'NjkwOTQyNjU2MTIxMTQzMzI3.XnZTHQ.VsUiWVJAmc_1rwKamcLbB0LAXsE';
 
 bot.on('ready', () =>{
     console.log('This bot is online!');
@@ -13,7 +12,8 @@ bot.on('ready', () =>{
     setInterval(function(){
         bot.user.setPresence({ activity: { name: 'Eluwina!' }, status: 'online' });
         d = new Date();
-        e = new String("Czas: "+d.getHours()+":"+d.getMinutes());
+        d1 = new Date(0, 0, 0, (d.getHours()+1), d.getMinutes(), 0, 0);
+        e = new String("Czas: "+d1.getHours()+":"+d1.getMinutes());
         m = new String("Członkowie: "+guild.memberCount);
         time.setName(e);
         member.setName(m);
