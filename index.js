@@ -19,4 +19,4 @@ bot.on('ready', () =>{
         member.setName(m);
     },10000)
 })
-bot.login(Process.env.token);
+bot.login("NjkwOTQyNjU2MTIxMTQzMzI3.XnZ4vQ.fucPPwbKFVYXDmWOf67rwKuudjw");
