@@ -19,11 +19,11 @@ bot.on('ready', () =>{
         m = new String("Członkowie: "+guild.memberCount);
         time.setName("Czas: " + d1.getHours()+":"+d.getMinutes());
         member.setName(m);
-        if(o === false){
+        if(o == false){
             info.setName("Dobre...");
             o = new Boolean(true);
         }
-        else if(o === true){
+        else if(o == true){
             info.setName("Czerwone!");
             o = new Boolean(false);
         }
