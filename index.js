@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 var d = new Date();
 var e = new String("");
 var m = new String("");
-var o = new boolean(false);
+var o = new Boolean(false);
 
 bot.on('ready', () =>{
     console.log('This bot is online!');
@@ -21,11 +21,11 @@ bot.on('ready', () =>{
         member.setName(m);
         if(o === false){
             info.setName("Dobre...");
-            o = new boolean(true);
+            o = new Boolean(true);
         }
         else if(o === true){
             info.setName("Czerwone!");
-            o = new boolean(false);
+            o = new Boolean(false);
         }
     },5000)
 })
