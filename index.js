@@ -15,7 +15,7 @@ bot.on('ready', () =>{
         d1 = new Date(0, 0, 0, (d.getHours()+1), 0, 0, 0);
         e = new String("Czas: "+d1.getHours()+":"+d1.getMinutes());
         m = new String("Członkowie: "+guild.memberCount);
-        time.setName("Czas: " + d1.getHours()+":"+d1.getMinutes());
+        time.setName("Czas: " + d1.getHours()+":"+d.getMinutes());
         member.setName(m);
     },10000)
 })
