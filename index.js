@@ -20,7 +20,7 @@ bot.on('ready', () =>{
         time.setName("Czas: " + d1.getHours()+":"+d.getMinutes());
         member.setName(m);
         if(o == false){
-            info.setName("Dzień 66");
+            info.setName("Dzień 9");
             o = new Boolean(true);
         }
         else if(o == true){
