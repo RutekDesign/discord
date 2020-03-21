@@ -12,8 +12,8 @@ bot.on('ready', () =>{
     setInterval(function(){
         bot.user.setPresence({ activity: { name: 'Eluwina!' }, status: 'online' });
         d = new Date();
-        d1 = new Date(0, 0, 0, (d.getHours()+1), d.getMinutes(), 0, 0);
-        e = new String("Czas: "+d1.getHours()+":"+d1.getMinutes());
+        d1 = new Date(0, 0, 0, (d.getHours()+1), 0, 0, 0);
+        e = new String("Czas: "+d1.getHours()+":"+d.getMinutes());
         m = new String("Członkowie: "+guild.memberCount);
         time.setName(e);
         member.setName(m);
