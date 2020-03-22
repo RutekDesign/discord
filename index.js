@@ -20,11 +20,11 @@ bot.on('ready', () =>{
         time.setName("Czas: " + d1.getHours()+":"+d.getMinutes());
         member.setName(m);
         if(o == false){
-            info.setName("Dzień 9");
+            info.setName("Dzień 10");
             o = new Boolean(true);
         }
         else if(o == true){
-            info.setName("Rosół się kończy...");
+            info.setName("Wpierdalamy pomidorki!");
             o = new Boolean(false);
         }
     },5000)
