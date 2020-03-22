@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 var d = new Date();
 var m = new String("");
 var o = new Boolean(false);
+var loo = 0;
 
 bot.on('ready', () =>{
     console.log('This bot is online!');
@@ -10,6 +11,7 @@ bot.on('ready', () =>{
     let time = guild.channels.cache.get("690939192943050782");
     let member = guild.channels.cache.get("690977704757035028");
     let info = guild.channels.cache.get("691032131970924655");
+    let infocat = guild.channels.cache.get("690977588293664819");
     bot.user.setPresence({ activity: { name: 'Eluwina!' }, status: 'online' });
     setInterval(function(){
         d = new Date();
@@ -34,5 +36,23 @@ bot.on('ready', () =>{
             o = new Boolean(false);
         }
     },5000)
+    setInterval(function(){
+        if(loo == 0){
+            infocat.setName("━• Informacje •━━━━━");
+            loo++;
+        }
+        else if(loo == 1){
+            infocat.setName("━━━• Informacje •━━━");
+            loo++;
+        }
+        else if(loo == 2){
+            infocat.setName("━━━━━• Informacje •━");
+            loo++;
+        }
+        else if(loo == 3){
+            infocat.setName("━━━• Informacje •━━━");
+            loo = 0;
+        }
+    },1000)
 })
 bot.login(process.env.token);
