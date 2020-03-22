@@ -53,6 +53,6 @@ bot.on('ready', () =>{
             infocat.setName("━━━• Informacje •━━━");
             loo = 0;
         }
-    },1000)
+    },2500)
 })
 bot.login(process.env.token);
