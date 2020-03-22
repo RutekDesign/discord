@@ -16,7 +16,7 @@ bot.on('ready', () =>{
         d1 = new Date(0, 0, 0, (d.getHours()+1), 0, 0, 0);
         m = new String("Członkowie: "+guild.memberCount);
         var h = d1.getHours();
-        var min = d.getHours();
+        var min = d.getMinutes();
         if(h < 10){
             h = new String("0"+h);
         }
