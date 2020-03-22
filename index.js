@@ -30,7 +30,7 @@ bot.on('ready', () =>{
             o = new Boolean(true);
         }
         else if(o == true){
-            info.setName("Wpierdalamy pomidorki!");
+            info.setName("Nie wiem co robić...");
             o = new Boolean(false);
         }
     },5000)
