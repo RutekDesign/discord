@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 var d = new Date();
-var e = new String("");
 var m = new String("");
 var o = new Boolean(false);
 
@@ -15,9 +14,16 @@ bot.on('ready', () =>{
     setInterval(function(){
         d = new Date();
         d1 = new Date(0, 0, 0, (d.getHours()+1), 0, 0, 0);
-        e = new String("Czas: "+d1.getHours()+":"+d1.getMinutes());
         m = new String("Członkowie: "+guild.memberCount);
-        time.setName("Czas: " + d1.getHours()+":"+d.getMinutes());
+        var h = d1.getHours();
+        var min = d.getHours();
+        if(h < 10){
+            h = new String("0"+h);
+        }
+        if(min < 10){
+            min = new String("0"+min);
+        }
+        time.setName("Czas: " + h + ":" + min);
         member.setName(m);
         if(o == false){
             info.setName("Dzień 10");
