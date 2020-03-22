@@ -11,7 +11,6 @@ bot.on('ready', () =>{
     let time = guild.channels.cache.get("690939192943050782");
     let member = guild.channels.cache.get("690977704757035028");
     let info = guild.channels.cache.get("691032131970924655");
-    let infocat = guild.channels.cache.get("690977588293664819");
     bot.user.setPresence({ activity: { name: 'Eluwina!' }, status: 'online' });
     setInterval(function(){
         d = new Date();
@@ -36,23 +35,5 @@ bot.on('ready', () =>{
             o = new Boolean(false);
         }
     },5000)
-    setInterval(function(){
-        if(loo == 0){
-            infocat.setName("━• Informacje •━━━━━");
-            loo++;
-        }
-        else if(loo == 1){
-            infocat.setName("━━━• Informacje •━━━");
-            loo++;
-        }
-        else if(loo == 2){
-            infocat.setName("━━━━━• Informacje •━");
-            loo++;
-        }
-        else if(loo == 3){
-            infocat.setName("━━━• Informacje •━━━");
-            loo = 0;
-        }
-    },2500)
 })
 bot.login(process.env.token);
